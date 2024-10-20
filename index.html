@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Запись к мастеру</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Записаться ко мне на маникюр можете ниже</h1>
+
+        <!-- Новый раздел для регистрации -->
+        <div id="registrationForm" class="registration-form">
+            <h2>Регистрация</h2>
+            <label for="phoneInput">Введите ваш номер телефона:</label>
+            <input type="tel" id="phoneInput" placeholder="1234567890" required>
+            <button id="registerBtn">Зарегистрироваться</button>
+        </div>
+
+        <!-- Список услуг -->
+        <div class="services">
+            <h2>Выберите услугу:</h2>
+            <select id="serviceSelect">
+                <option value="Маникюр">Маникюр</option>
+            </select>
+        </div>
+
+        <!-- Выбор даты -->
+        <div class="calendar">
+            <h2>Выберите дату:</h2>
+            <input type="date" id="appointmentDate">
+        </div>
+
+        <!-- Выбор времени -->
+        <div class="timeslots">
+            <h2>Выберите время:</h2>
+            <input type="time" id="appointmentTime">
+        </div>
+
+        <!-- Кнопка для записи -->
+        <button id="submitBtn">Записаться</button>
+
+        <!-- Список будущих записей -->
+        <div class="appointments">
+            <h2>Ваши записи:</h2>
+            <ul id="appointmentsList"></ul>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
